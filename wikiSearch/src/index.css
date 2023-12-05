@@ -1,4 +1,13 @@
-body{
-  background-color: black;
-  color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+body {
+  height: 100vh;
+  /* position: relative; */
+  background-color: chocolate;
+  display: flex;
+  justify-content: center;
 }

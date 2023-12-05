@@ -1,39 +1,105 @@
-
-.App {
-  text-align: center;
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* position: relative; */
+  width: 500px;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* position: absolute; */
+  /* bottom: 50px; */
+  /* width: 100px; */
+  height: 30%;
+}
+.form h1{
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+.form input{
+  border: none;
+  width: 400px;
+  height: 30px;
+  border-radius: 100px;
+  margin: 10px 0;
+  padding: 0 15px;
+}
+.form input:focus-visible{
+  border: none;
+  outline: none;
+}
+.form button{
+  border: none;
+  border-radius: 5px;
+  width: 60px;
+  height: 30px;
+}
+.form button:hover{
+  box-shadow: rgb(88, 88, 88) 4px 4px 3px;
+  transition: 0.2s ease ;
+}
+.form button:active{
+  width: 55px ;
+  height: 25px ;
+}
+
+
+.resultHide{
+  /* position: absolute; */
+  display: none;
+  overflow: scroll;
+  width: 120%;
+  height: 50%;
+}
+.resultShow{
+  overflow: scroll;
+  width: 120%;
+  height: 70%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space; */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.resultShow::-webkit-scrollbar{
+  display: none;
+}
+.resultShow div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+  /* border-bottom: 1px solid rgb(167, 167, 167); */
+}
+.resultShow div h2{
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+.resultShow div p{
+  font-family: monospace;
+}
+.resultShow div a{
+  text-decoration: none;
+  background-color: #0049B7;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 35px;
+  border-radius: 6px;
   color: white;
+  margin: 15px 0;
 }
+.resultShow div a:hover{
+  background-color: rgb(29, 105, 29);
+  transition: 0.2s;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
