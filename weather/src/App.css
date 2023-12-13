@@ -1,4 +1,24 @@
-body{
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  flex-direction: column;
+  
+}
+
+.input{
+  padding-bottom: 10px;
+
+}
+
+
+.d{
+  background-color: #6495ED;
+}
+.n{
   color: white;
-  background-color: black;
+  background-color: #191919
 }
